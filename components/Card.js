@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/Card.module.css'
 
-import { Card, Typography, Chip, Grid } from '@material-ui/core'
+import { Card, Chip, Grid } from '@material-ui/core'
 
 import Router from 'next/router'
 const openProductPage = id => _ => Router.push({ pathname: `/product/${id}` })
@@ -32,7 +32,7 @@ export default function MyCard({ product:
                 <Grid container
                     direction="row" justify="space-between" alignItems="flex-end" >
                     <span align="left" color="textPrimary"> {price} </span>
-                    <Chip label={category} size="small" variant="outlined"/>
+                    <Chip label={category} size="small" variant="outlined" />
                 </Grid>
             </Grid>
         </Card>

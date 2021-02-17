@@ -1,0 +1,1 @@
+export const parseProduct = product => ({ ...product, id: product._id })
